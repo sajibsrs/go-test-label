@@ -25,3 +25,11 @@ Boolean param defines whether label will have background.
 label := label.NewLabel(false) // param boolean
 t.Logf("%sTV turned off", label.Pass)
 ```
+
+### Test
+
+Run test with in terminal with verbose mode
+
+```bash
+go test -v
+```
