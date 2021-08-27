@@ -6,7 +6,7 @@ import (
 )
 
 func TestLabel(t *testing.T) {
-	label := NewLabel(false)
+	label := NewLabel(true)
 
 	t.Logf("Next test should pass")
 	t.Logf("%sTest that passed", label.Pass)
