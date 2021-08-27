@@ -7,7 +7,7 @@ type label struct {
 	warn string
 }
 
-func newlabel(block bool) *label {
+func NewLabel(block bool) *label {
 	if block {
 		return &label{
 			pass: "\033[102;30m pass ✓ \033[0m ",
