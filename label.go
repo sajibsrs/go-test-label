@@ -1,25 +1,25 @@
 package label
 
 type Label struct {
-	pass string
-	fail string
-	info string
-	warn string
+	Pass string
+	Fail string
+	Info string
+	Warn string
 }
 
 func NewLabel(block bool) *Label {
 	if block {
 		return &Label{
-			pass: "\033[102;30m pass ✓ \033[0m ",
-			fail: "\033[101;30m fail ✕ \033[0m ",
-			info: "\033[106;30m info i \033[0m ",
-			warn: "\033[103;30m warn ! \033[0m ",
+			Pass: "\033[102;30m Pass ✓ \033[0m ",
+			Fail: "\033[101;30m Fail ✕ \033[0m ",
+			Info: "\033[106;30m Info i \033[0m ",
+			Warn: "\033[103;30m Warn ! \033[0m ",
 		}
 	}
 	return &Label{
-		pass: "\033[32;1mpass ✓ \033[0m ",
-		fail: "\033[31;1mfail ✕ \033[0m ",
-		info: "\033[36;1minfo i \033[0m ",
-		warn: "\033[33;1mwarn ! \033[0m ",
+		Pass: "\033[32;1mPass ✓ \033[0m ",
+		Fail: "\033[31;1mfail ✕ \033[0m ",
+		Info: "\033[36;1minfo i \033[0m ",
+		Warn: "\033[33;1mwarn ! \033[0m ",
 	}
 }
